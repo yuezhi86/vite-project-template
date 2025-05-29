@@ -6,6 +6,7 @@ export default {
     'stylelint-config-standard-scss',
     'stylelint-config-recommended-vue/scss',
   ],
+  plugins: ['stylelint-scss'],
   overrides: [
     {
       files: ['**/*.vue'],

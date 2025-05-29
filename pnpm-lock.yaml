@@ -21,10 +21,10 @@ specifiers:
   stylelint-config-recommended-vue: ^1.6.0
   stylelint-config-standard: ^38.0.0
   stylelint-config-standard-scss: ^15.0.1
+  stylelint-scss: ^6.12.0
   typescript: ~5.8.3
   typescript-eslint: ^8.33.0
   vite: ^6.3.5
-  vite-plugin-stylelint: ^6.0.0
   vue: ^3.5.13
   vue-eslint-parser: ^10.0.0
   vue-tsc: ^2.2.8
@@ -53,10 +53,10 @@ devDependencies:
   stylelint-config-recommended-vue: 1.6.0_dvcm3fpt2auuekfaz4dkz2xpcu
   stylelint-config-standard: 38.0.0_stylelint@16.19.1
   stylelint-config-standard-scss: 15.0.1_igcdy6uptvmlxccqdvvkeior74
+  stylelint-scss: 6.12.0_stylelint@16.19.1
   typescript: 5.8.3
   typescript-eslint: 8.33.0_nmipafpv3qyoz7vxmcr36r5pme
   vite: 6.3.5_sass-embedded@1.89.0
-  vite-plugin-stylelint: 6.0.0_vrkkdpuqmmwwqkwoxsowdojtx4
   vue-eslint-parser: 10.1.3_eslint@9.27.0
   vue-tsc: 2.2.10_typescript@5.8.3
 
@@ -968,20 +968,6 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
-    dev: true
-
-  /@rollup/pluginutils/5.1.4:
-    resolution: {integrity: sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-    dependencies:
-      '@types/estree': 1.0.7
-      estree-walker: 2.0.2
-      picomatch: 4.0.2
     dev: true
 
   /@rollup/rollup-android-arm-eabi/4.41.1:
@@ -3709,32 +3695,6 @@ packages:
 
   /varint/6.0.0:
     resolution: {integrity: sha512-cXEIW6cfr15lFv563k4GuVuW/fiwjknytD37jIOLSdSWuOI6WnO/oKwmP2FQTU2l01LP8/M5TSAJpzUaGe3uWg==}
-    dev: true
-
-  /vite-plugin-stylelint/6.0.0_vrkkdpuqmmwwqkwoxsowdojtx4:
-    resolution: {integrity: sha512-qXsot4hTkAlR8aXNXhBxF1KWyP78SocCobD1mBwka85l0+nY1Ja4HEyW2x2RbC7kIs6ff9mdUxK9TqcwuxQjxw==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@types/stylelint': ^13.0.0
-      postcss: ^7.0.0 || ^8.0.0
-      rollup: ^2.0.0 || ^3.0.0 || ^4.0.0
-      stylelint: ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-      vite: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
-    peerDependenciesMeta:
-      '@types/stylelint':
-        optional: true
-      postcss:
-        optional: true
-      rollup:
-        optional: true
-    dependencies:
-      '@rollup/pluginutils': 5.1.4
-      debug: 4.4.1
-      postcss: 8.5.4
-      stylelint: 16.19.1_typescript@5.8.3
-      vite: 6.3.5_sass-embedded@1.89.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /vite/6.3.5_sass-embedded@1.89.0:
