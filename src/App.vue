@@ -17,9 +17,9 @@ import HelloWorld from './components/HelloWorld.vue';
 <style scoped lang="scss">
 .logo {
   height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  padding: 1.5em;
 }
 
 .logo:hover {
