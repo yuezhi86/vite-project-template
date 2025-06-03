@@ -13,4 +13,7 @@ export default {
       customSyntax: 'postcss-html',
     },
   ],
+  rules: {
+    'no-empty-source': null,
+  },
 };
