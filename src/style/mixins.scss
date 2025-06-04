@@ -30,25 +30,25 @@
 }
 
 // 定义左右 margin
-@mixin margin-h($margin) {
+@mixin margin-x($margin) {
   margin-right: $margin;
   margin-left: $margin;
 }
 
 // 定义上下 margin
-@mixin margin-v($margin) {
+@mixin margin-y($margin) {
   margin-top: $margin;
   margin-bottom: $margin;
 }
 
 // 定义左右 padding
-@mixin padding-h($padding) {
+@mixin padding-x($padding) {
   padding-right: $padding;
   padding-left: $padding;
 }
 
 // 定义上下 padding
-@mixin padding-v($padding) {
+@mixin padding-y($padding) {
   padding-top: $padding;
   padding-bottom: $padding;
 }
@@ -68,7 +68,7 @@
   }
 }
 
-@mixin border-h($border-color, $z-index: 20) {
+@mixin border-x($border-color, $z-index: 20) {
   position: absolute;
   left: 0;
   z-index: $z-index;
@@ -79,7 +79,7 @@
   @content;
 }
 
-@mixin border-v($border-color, $z-index: 20) {
+@mixin border-y($border-color, $z-index: 20) {
   position: absolute;
   top: 0;
   z-index: $z-index;
@@ -92,7 +92,7 @@
 
 @mixin border-bottom($border-color, $z-index: 20) {
   &::before {
-    @include border-h($border-color, $z-index) {
+    @include border-x($border-color, $z-index) {
       transform-origin: 0 100%;
     }
 
@@ -103,7 +103,7 @@
 
 @mixin border-top($border-color, $z-index: 20) {
   &::before {
-    @include border-h($border-color, $z-index) {
+    @include border-y($border-color, $z-index) {
       transform-origin: 0 0;
     }
 
@@ -114,7 +114,7 @@
 
 @mixin border-right($border-color, $z-index: 20) {
   &::before {
-    @include border-v($border-color, $z-index) {
+    @include border-x($border-color, $z-index) {
       transform-origin: right 0;
     }
 
@@ -125,7 +125,7 @@
 
 @mixin border-left($border-color, $z-index: 20) {
   &::before {
-    @include border-v($border-color, $z-index) {
+    @include border-x($border-color, $z-index) {
       transform-origin: 0 0;
     }
 
@@ -174,7 +174,11 @@
 }
 
 // 文本断行
-@mixin text-break() {
+@mixin text-break($space) {
   word-wrap: break-word;
   word-break: break-all;
+
+  @if $space {
+    white-space: $space;
+  }
 }

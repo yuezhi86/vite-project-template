@@ -49,6 +49,13 @@ export default defineConfig(({ command }) => {
         '@': pathResolve('src'),
       },
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@use "@/style/mixins.scss" as *;`,
+        },
+      },
+    },
   };
 });
 

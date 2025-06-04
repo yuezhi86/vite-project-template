@@ -20,6 +20,7 @@ import HelloWorld from './components/HelloWorld.vue';
   will-change: filter;
   transition: filter 300ms;
   padding: 1.5em;
+  display: inline-block;
 }
 
 .logo:hover {

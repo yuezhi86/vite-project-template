@@ -1,4 +1,6 @@
 @use 'tailwindcss';
+@use 'variable';
+@use 'element-reset';
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
